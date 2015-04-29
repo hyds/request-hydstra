@@ -1,20 +1,21 @@
 {
-  "name": "request",
-  "description": "Simplified HTTP request client.",
+  "name": "request-hydstra",
+  "description": "Simplified HTTP request client for Hydstra webservices forked from request.",
   "tags": [
     "http",
     "simple",
     "util",
-    "utility"
+    "utility",
+    "hydstra"	
   ],
-  "version": "2.55.1",
-  "author": "Mikeal Rogers <mikeal.rogers@gmail.com>",
+  "version": "1.0.0",
+  "authors": ["Mikeal Rogers <mikeal.rogers@gmail.com>","Sholto Maud <sholto.maud@gmail.com>"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/request/request.git"
+    "url": "https://github.com/hyds/request-hydstra.git"
   },
   "bugs": {
-    "url": "http://github.com/request/request/issues"
+    "url": "http://github.com/hyds/request-hydstra/issues"
   },
   "license": "Apache-2.0",
   "engines": {

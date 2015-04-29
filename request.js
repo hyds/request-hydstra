@@ -958,6 +958,10 @@ Request.prototype.start = function () {
   var reqOptions = copy(self)
   delete reqOptions.auth
 
+  //hack for dodgy Queensland Department of Natural Resources and Mines webservice. 
+  var pat = self.path;
+  self.path = decodeURIComponent(pat);
+
   debug('make request', self.uri.href)
 
   self.req = self.httpModule.request(reqOptions)
