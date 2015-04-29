@@ -953,14 +953,14 @@ Request.prototype.start = function () {
     self.aws(self._aws, true)
   }
 
+  //hack for dodgy Queensland Department of Natural Resources and Mines webservice. 
+  var pat = self.path;
+  self.path = decodeURIComponent(pat);
+
   // We have a method named auth, which is completely different from the http.request
   // auth option.  If we don't remove it, we're gonna have a bad time.
   var reqOptions = copy(self)
   delete reqOptions.auth
-
-  //hack for dodgy Queensland Department of Natural Resources and Mines webservice. 
-  var pat = self.path;
-  self.path = decodeURIComponent(pat);
 
   debug('make request', self.uri.href)
 
